@@ -11,7 +11,18 @@
             box-sizing: border-box;
         }
 
-        .flex-container{
+        h2{
+            color:white;
+            text-align:center;
+        }
+
+        .flex-container {
+            display:flex;
+            flex-direction:row;
+        }
+
+        .signal-box
+        {
             display:flex;
             flex-direction:column;
             background-color: rgb(37,37,37);
@@ -19,6 +30,8 @@
             height:500px;
             margin:auto;
         }
+
+
 
         .signal{
             background-color: white;
@@ -36,12 +49,34 @@
 </head>
 <body>
     <div class="flex-container">
-        <div class="red signal"></div>
-        <div class="yellow signal"></div>
-        <div class="green signal"></div>
-    </div>
+        <div class='signal-box'>
+            <h2>1</h2>
+            <div class="red signal"></div>
+            <div class="yellow signal"></div>
+            <div class="green signal"></div>
+        </div>
 
-    <div class="timerDiv"></div>
+        <div class='signal-box'>
+            <h2>2</h2>
+            <div class="red2 signal"></div>
+            <div class="yellow2 signal"></div>
+            <div class="green2 signal"></div>
+        </div>
+
+        <div class='signal-box'>
+            <h2>3</h2>
+            <div class="red signal"></div>
+            <div class="yellow signal"></div>
+            <div class="green signal"></div>
+        </div>
+
+        <div class='signal-box'>
+            <h2>4</h2>
+            <div class="red2 signal"></div>
+            <div class="yellow2 signal"></div>
+            <div class="green2 signal"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
