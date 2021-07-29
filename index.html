@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            display:flex;
+            flex-direction:column;
+            background-color: rgb(37,37,37);
+            width:200px;
+            height:500px;
+            margin:auto;
+        }
+
+        .signal{
+            background-color: white;
+            border-radius: 800%;
+            width:calc(200px-10px);
+            height:calc(500px/3);
+            margin:10px;
+        }
+
+        .timerDiv{
+            font-size:30px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="red signal"></div>
+        <div class="yellow signal"></div>
+        <div class="green signal"></div>
+    </div>
+
+    <div class="timerDiv"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
